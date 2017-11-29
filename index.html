@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Wikipedia Free Code Camp project</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Roboto+Slab|Indie+Flower|Lobster|Kaushan+Script|Quattrocento|Great+Vibes|Tangerine' rel='stylesheet' type='text/css'>
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer project</title>
+  <!-- add fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px|Roboto+Slab|Indie+Flower|Lobster|Kaushan+Script|Quattrocento|Great+Vibes|Tangerine' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/style.css">
+  <!-- add stylesheets -->
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    
-    
-    
-  </head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1> Wikipedia Viewer</h1>
+      <div class="row">
+        <input id="search" placeholder="Search Wikipedia" type="text" class="form-control" />
+        <div id="centerDiv">
+          <button id="searchButton" type="button" class="btn btn-primary">Search</button>
+          <button type="button" id="random" class="btn btn-warning">Random Wikipedia Article</button>
+        </div>
+      </div>
 
-  <body>
-
-    <div class="container">
-  <div class="jumbotron">
-    <h1> Wikipedia Viewer</h1>
-    <div class="row">
-      <input id="search" placeholder="Search Wikipedia" type="text" class="form-control" onkeyup="if(event.keyCode == 13) document.getElementById('searchButton').click()">
-      <div id="centerDiv">
-      <button id="searchButton" type="button" class="btn btn-primary">Search</button>
-
-      <button type="button" id="random" class="btn btn-warning" onclick="window.open('http://en.wikipedia.org/wiki/Special:Random');">Random Wikipedia Article</button>
+      <!-- output search here -->
+      <dl id="output"></dl>
     </div>
-    </div>
-
-
-    <dl id="output">
-    </dl>
-
-
   </div>
-</div>
 
-
-<footer>
-  <div class="footer">
-  <div id="jack">Built by <a href="http://codepen.io/mayerxc/full/yOOwZL/" target="_blank">Chris Mayer</a>
+  <footer>
+    <div class="footer">
+      Built by <a href="http://codepen.io/mayerxc/full/yOOwZL/" target="_blank">Chris Mayer</a>
     </div>
-    </footer>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+  </footer>
 
-        <script src="js/index.js"></script>
+  <!-- scripts -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+  <script src="js/index.js"></script>
 
-    
-    
-    
-  </body>
+</body>
 </html>
